@@ -1,23 +1,25 @@
 import React from 'react';
 import './App.css';
-import categories from './categories';
-import 
-function App() {
-  return (
-   <div className='categories-container'>
-   {
-    categories.map(({title})=>(
-      <div className='category-container'>
-      
-      <div className='category-body-container'>
-        <h1>{title}</h1>
-         <p>Shop Now</p>
-      </div>
-      </div>
-))
-   }
-   </div>
-  );
+import './component/route/Home';
+import { Routes , Route } from 'react-router-dom';
+import Home from './component/route/Home';
+import Navigation from './component/navbar/Navigation';
+import Authentication from './component/route/authentication';
+import Shop from './component/route/shop/Shop';
+
+function App(){
+
+ return(
+    <Routes>
+    <Route path='/' element={<Navigation />}>
+      <Route  index  element={<Home />} /> 
+        <Route path='shop' element={<Shop />}/>
+        <Route path='auth' element={<Authentication />}/>
+      </Route>
+    </Routes>
+    
+  )
 }
+
 
 export default App;
