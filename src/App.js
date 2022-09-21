@@ -6,6 +6,7 @@ import Home from './component/route/Home';
 import Navigation from './component/navbar/Navigation';
 import Authentication from './component/route/authentication';
 import Shop from './component/route/shop/Shop';
+import Checkout from './component/route/checkout/Checkout';
 
 function App(){
 
@@ -15,6 +16,7 @@ function App(){
       <Route  index  element={<Home />} /> 
         <Route path='shop' element={<Shop />}/>
         <Route path='auth' element={<Authentication />}/>
+        <Route path='checkout' element={<Checkout />}/>
       </Route>
     </Routes>
     
