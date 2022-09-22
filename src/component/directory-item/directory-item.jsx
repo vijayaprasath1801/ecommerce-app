@@ -1,15 +1,15 @@
-import './directory-item.styles.scss';
 import React from 'react';
+import { BackgroundImage, Body, DirectoryItemContainer } from './directory-item.styles';
 
 function DirectoryItem(props){
     return(
-    <div className='directory-item-container'>
-      <div className='background-image' style={{backgroundImage : `url(${props.imageUrl})`}}/>
-      <div className='body'>
+    <DirectoryItemContainer>
+      <BackgroundImage style={{backgroundImage : `url(${props.imageUrl})`}}/>
+      <Body>
    <h2>{props.title}</h2>
     <p>Shop Now</p>
- </div>
- </div>
+ </Body>
+ </DirectoryItemContainer>
     )
 }
   

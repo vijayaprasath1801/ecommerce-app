@@ -1,16 +1,16 @@
 import DirectoryItem from '../directory-item/directory-item';
 import categories from '../directory-item/categories';
-import '../directory/categories.styles.scss';
+import { CategoriesContainer } from './categories.styles.jsx';
 
 function Directory(){
     return(
-<div className='categories-container'>
+<CategoriesContainer>
    {
     categories.map(({title , id , imageUrl})=>(
     <DirectoryItem key={id} title={title} imageUrl={imageUrl}/>
 ))
    }
-   </div>
+   </CategoriesContainer>
     )
 }
 

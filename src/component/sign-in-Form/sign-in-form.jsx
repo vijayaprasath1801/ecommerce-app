@@ -2,7 +2,7 @@ import { useState } from "react";
 import { signInWithGooglePopup , createUserDocumentFromAuth ,signinAuthUserWithEmailAndPassword } from "../../utils/firebase/firebase";
 import FormInput from "../form-input/form-input";
 import Button from "../button/button";
-import './signin.styles.scss';
+import { ButtonsContainer, SignInContainer } from "./signin.styles.jsx";
 
 const defaultFields ={
     email : "",
@@ -51,7 +51,7 @@ setFormFields({...formFields , [name]:value});
     };
 
     return(
-        <div className="sign-in-container">
+        <SignInContainer>
             <h2>Already Have an Account</h2>
             <span>Sign In With Your Email and Password</span>
             <form onSubmit={HandleSubmit}>
@@ -71,12 +71,12 @@ setFormFields({...formFields , [name]:value});
                  name="password" 
                  value={password}
                   />
-                  <div className="buttons-container">
+                  <ButtonsContainer>
                 <Button buttonType="inverted" type='submit'>SignIn</Button>
                 <Button onClick ={signinWithGoogle} buttonType="google">Google Sign-in</Button>
-                </div>
+                </ButtonsContainer>
             </form>
-        </div>
+        </SignInContainer>
     )
 }
 export default SignInForm;
