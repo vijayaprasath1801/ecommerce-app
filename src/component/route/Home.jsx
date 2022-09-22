@@ -1,9 +1,9 @@
-import DirectoryItem from '../directory/directory.item';
+import Directory from '../directory/directory';
 
 
 function Home() {
   return (
-   <DirectoryItem />
+   <Directory />
   )
 }
 
