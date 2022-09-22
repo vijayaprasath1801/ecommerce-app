@@ -8,7 +8,7 @@ export const CategoryPreviewContainer = styled.div`
   margin-bottom: 30px;
 
   span{
-  font-size: 28px;
+  font-size: 18px;
   margin-bottom: 25px;
   cursor: pointer;
   }

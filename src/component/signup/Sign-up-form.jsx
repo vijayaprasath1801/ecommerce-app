@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { createAuthUserWithEmailAndPassword , createUserDocumentFromAuth} from "../../utils/firebase/firebase";
 import FormInput from "../form-input/form-input";
-import Button from "../button/button";
+import Button, { BUTTON_TYPE_CLASSES } from "../button/button";
 import "./signup.styles.jsx";
 import { SignUpContainer } from "./signup.styles.jsx";
 
@@ -83,7 +83,7 @@ setFormFields({...formFields , [name]:value});
                  name="confirmPassword" 
                  value={confirmPassword}
                   />
-                <Button buttonType="inverted" type='submit'>SignUp</Button>
+                <Button type='submit'>SignUp</Button>
             </form>
         </SignUpContainer>
     )

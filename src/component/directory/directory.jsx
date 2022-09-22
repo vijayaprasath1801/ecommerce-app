@@ -6,8 +6,8 @@ function Directory(){
     return(
 <CategoriesContainer>
    {
-    categories.map(({title , id , imageUrl})=>(
-    <DirectoryItem key={id} title={title} imageUrl={imageUrl}/>
+    categories.map((category)=>(
+    <DirectoryItem key={category.id} category={category}/>
 ))
    }
    </CategoriesContainer>
