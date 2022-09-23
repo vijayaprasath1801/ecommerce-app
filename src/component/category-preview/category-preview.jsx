@@ -7,7 +7,7 @@ function CategoryPreview({title, products}){
         <CategoryPreviewContainer>
         <h2>
             <span>{title.toUpperCase()}</span>
-            <More to={title}>+More</More>
+            <More to={title}>View More</More>
         </h2>
           <Preview>
             {

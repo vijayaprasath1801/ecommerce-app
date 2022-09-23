@@ -17,7 +17,7 @@ export const CategoryPreviewContainer = styled.div`
 export const More = styled(Link)`
    display : flex;
     justify-content :right;
-    color:#5F6F94;
+    color:#643939;
     font-size: small;
 `;
 
