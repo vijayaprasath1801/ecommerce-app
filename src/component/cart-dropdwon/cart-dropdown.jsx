@@ -11,7 +11,7 @@ function CartDropDown(){
     const navigate = useNavigate();
 
     const navigateHandler=()=>{
-        navigate('/checkout')
+        navigate('/checkout');
     }
     return(
         <CartDropDownContainer>
