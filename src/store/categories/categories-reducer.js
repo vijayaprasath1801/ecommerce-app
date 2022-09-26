@@ -1,4 +1,3 @@
-import { CART_ACTION_TYPES } from "../cart/cart-types";
 import { CATEGORIES_ACTION_TYPES } from "./categories-types";
 
 
