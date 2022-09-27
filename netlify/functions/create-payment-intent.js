@@ -8,7 +8,7 @@ exports.handler = async (event) => {
     const paymentIntent = await stripe.paymentIntents.create({
       description: 'Software development services',
       shipping: {
-        name: 'Jenny Rosen',
+        name: 'Vijay',
         address: {
           line1: '510 Townsend St',
           postal_code: '98140',
